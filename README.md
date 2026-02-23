@@ -11,6 +11,8 @@ To design and simulate a Differentiator circuit using μA741 in Proteus Design S
 •	CRO / Oscilloscope
 •	Connecting wires
 ## Circuit Diagram
+<img width="759" height="453" alt="image" src="https://github.com/user-attachments/assets/6abc3e4f-e29b-4516-bff1-560c5efc92a8" />
+
 ## Connection Details:
 •	Input signal → Capacitor (C) → Inverting terminal (Pin 2)
 •	Feedback resistor (Rf) → Between Output (Pin 6) and Pin 2
@@ -32,8 +34,12 @@ A Differentiator circuit produces an output voltage proportional to the rate of 
 6.	Run simulation.
 7.	Observe input and output waveforms on CRO.
 ## Tabulation
-S.No 	         Input Signal	              Frequency	            Expected  Output	            Practical Observation
+<img width="797" height="287" alt="image" src="https://github.com/user-attachments/assets/8c52a24b-9657-4e6e-af8e-56ed39066d74" />
+
+
 ## Waveforms
+<img width="932" height="765" alt="image" src="https://github.com/user-attachments/assets/bf1f1597-96b3-4851-8345-8bfe594530be" />
+
 •	Sine input → Cosine output (90° phase shift)
 •	Square input → Positive & negative spikes
 •	Triangular input → Square wave
@@ -47,9 +53,13 @@ The circuit behaves as a differentiator.
 •	Higher frequency → Higher output amplitude.
 •	Used in wave shaping and signal processing applications.
 ## Viva Questions
-1.	What is a differentiator?
-2.	Write the output equation of differentiator.
-3.	Why is output leading input?
-4.	What happens at very high frequency?
-5.	What is practical differentiator?
+1.	What is a differentiator? An op-amp circuit that produces an output proportional to the rate of change of the input signal. It performs mathematical differentiation of the input.
+
+
+2.	Write the output equation of differentiator.  ( V_{out} = -RC \dfrac{dV_{in}}{dt} ). Output depends on how fast the input voltage changes with time.
+
+
+3.	Why is output leading input? Differentiation emphasizes rapid changes, causing the output to respond earlier than the input waveform peak. Hence the output leads the input in phase.
+4.	What happens at very high frequency?  Gain increases and noise gets amplified, making the circuit unstable. It may cause distortion or oscillations.
+5.	What is practical differentiator? A modified differentiator with additional resistor and capacitor to limit high-frequency gain. It improves stability and reduces noise.
 
